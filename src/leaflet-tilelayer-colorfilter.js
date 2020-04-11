@@ -19,7 +19,7 @@ L.TileLayer.ColorFilter = L.TileLayer.extend({
 			'opacity:%', 'op:opacity:%',
 			'saturate:%', 'saturation:saturate:%', 'sat:saturate:%',
 			'sepia:%', 'sep:sepia:%',
-		]
+		];
 
 		let colorFilterOptions = this.options.filter ? this.options.filter : [];
 		let filterSettings = colorFilterOptions.map((opt) => {
@@ -48,8 +48,8 @@ L.TileLayer.ColorFilter = L.TileLayer.extend({
 			this._container.style.filter = this.colorFilter();
 		}
 	},
-})
+});
 
 L.tileLayer.colorFilter = function (url, options) {
 	return new L.TileLayer.ColorFilter(url, options);
-}
+};
